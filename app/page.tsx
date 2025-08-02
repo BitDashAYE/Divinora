@@ -5,47 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
-import { 
-  Search, 
-  Heart, 
-  Star, 
-  Globe, 
-  BookOpen, 
-  Play, 
-  Users, 
-  Sparkles,
-  Lotus,
-  Sun,
-  Moon,
-  Wind,
-  Waves,
-  Mountain,
-  Leaf,
-  Flame,
-  Eye,
-  Compass,
-  Shield,
-  Crown,
-  Feather,
-  Zap,
-  Music,
-  Camera,
-  Headphones,
-  Mic,
-  Volume2,
-  Calendar,
-  Clock,
-  MapPin,
-  Filter,
-  ArrowRight,
-  ChevronDown,
-  Menu,
-  X,
-  User,
-  Settings,
-  LogIn,
-  UserPlus
-} from "lucide-react";
+import { Search, Heart, Star, Globe, BookOpen, Play, Users, Sparkles, Bot as Lotus, Sun, Moon, Wind, Waves, Mountain, Leaf, Flame, Eye, Compass, Shield, Crown, Feather, Zap, Music, Camera, Headphones, Mic, Volume2, Calendar, Clock, MapPin, Filter, ArrowRight, ChevronDown, Menu, X, User, Settings, LogIn, UserPlus } from "lucide-react";
 import { deities, festivals, sacredStories, teachings, histories, bhaktiVideos, holyBooks } from "@/lib/content";
 import { DeityModal } from "@/components/deity-modal";
 import { StoryModal } from "@/components/story-modal";
