@@ -31,6 +31,14 @@ export function ReligionPreferences({ isOpen, onClose, userId }: ReligionPrefere
     e.preventDefault();
     if (!primaryReligion) return;
 
+    if (!supabase) {
+      toast({
+        title: "Configuration Error",
+        description: "Supabase is not configured. Please check your environment variables.",
+        variant: "destructive",
+      });
+      return;
+    }
     setIsLoading(true);
     try {
       const { error } = await supabase

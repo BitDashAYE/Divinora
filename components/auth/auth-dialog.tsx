@@ -26,6 +26,16 @@ export function AuthDialog({ isOpen, onClose, onSuccess }: AuthDialogProps) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    if (!supabase) {
+      toast({
+        title: "Configuration Error",
+        description: "Supabase is not configured. Please check your environment variables.",
+        variant: "destructive",
+      });
+      return;
+    }
+    
     setIsLoading(true);
 
     try {

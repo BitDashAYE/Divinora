@@ -23,6 +23,10 @@ export function UserNav({ user }: UserNavProps) {
   const [showPreferences, setShowPreferences] = useState(false);
 
   const handleSignOut = async () => {
+    if (!supabase) {
+      console.error('Supabase not configured');
+      return;
+    }
     await supabase.auth.signOut();
   };
 
