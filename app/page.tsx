@@ -6,35 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { 
-  Search, 
-  BookOpen, 
-  Users, 
-  Calendar, 
-  Star, 
-  Heart, 
-  Globe, 
-  Sparkles,
-  Play,
-  User,
-  LogIn,
-  Moon,
-  Sun,
-  Menu,
-  X,
-  Filter,
-  ChevronRight,
-  Gem,
-  Scroll,
-  Mountain,
-  Lotus,
-  Crown,
-  Shield,
-  Flame,
-  Eye,
-  Zap,
-  Waves
-} from 'lucide-react';
+import { Search, BookOpen, Users, Calendar, Star, Heart, Globe, Sparkles, Play, User, LogIn, Moon, Sun, Menu, X, Filter, ChevronRight, Gem, Scroll, Mountain, Bot as Lotus, Crown, Shield, Flame, Eye, Zap, Waves } from 'lucide-react';
 import { useTheme } from "next-themes";
 import { supabase } from '@/lib/supabase';
 import { AuthDialog } from '@/components/auth/auth-dialog';
